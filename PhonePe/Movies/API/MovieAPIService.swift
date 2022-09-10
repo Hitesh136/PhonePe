@@ -10,7 +10,7 @@ class MovieAPIService {
     var apiService = APIService()
     
     func getMovieList(_ completion: @escaping (([MovieDTO]?) -> ()) ) {
-        let urlInString = "https://api.themoviedb.org/3/movie/now_playing?api_key=38a73d59546aa378980a88b645f487fc&language=en-US&page=1"
+        let urlInString = APIPath().getMovieListPath()
         apiService.getAPIRequest(urlInString) { data in
             
             guard let data = data else {

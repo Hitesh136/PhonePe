@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		27AB9E96D77F350E9968C59A /* Pods_PhonePe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD822BCDBDAB48A6BABA7D18 /* Pods_PhonePe.framework */; };
+		FF02B2FD28CD058E00060188 /* APIPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF02B2FC28CD058E00060188 /* APIPath.swift */; };
 		FF062C8928CCAFC600CCBBFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF062C8828CCAFC600CCBBFC /* AppDelegate.swift */; };
-		FF062C8B28CCAFC600CCBBFC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF062C8A28CCAFC600CCBBFC /* SceneDelegate.swift */; };
 		FF062C9028CCAFC600CCBBFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF062C8E28CCAFC600CCBBFC /* Main.storyboard */; };
 		FF062C9328CCAFC600CCBBFC /* PhonePe.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FF062C9128CCAFC600CCBBFC /* PhonePe.xcdatamodeld */; };
 		FF062C9528CCAFC800CCBBFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF062C9428CCAFC800CCBBFC /* Assets.xcassets */; };
@@ -22,18 +22,23 @@
 		FF062CB028CCB22000CCBBFC /* MovieTableCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF062CAF28CCB22000CCBBFC /* MovieTableCellViewModel.swift */; };
 		FF062CB228CCB68100CCBBFC /* MovieResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF062CB128CCB68100CCBBFC /* MovieResponseDTO.swift */; };
 		FF062CB428CCB90800CCBBFC /* MovieAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF062CB328CCB90800CCBBFC /* MovieAPIService.swift */; };
-		FF062CB628CCBDAC00CCBBFC /* PlayListManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF062CB528CCBDAC00CCBBFC /* PlayListManager.swift */; };
+		FF062CB628CCBDAC00CCBBFC /* PlayListDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF062CB528CCBDAC00CCBBFC /* PlayListDataService.swift */; };
 		FF062CB928CCBE0400CCBBFC /* PlayListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF062CB828CCBE0400CCBBFC /* PlayListViewController.swift */; };
 		FF062CBB28CCBE8500CCBBFC /* PlayListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF062CBA28CCBE8500CCBBFC /* PlayListViewModel.swift */; };
+		FF20C72C28CCD1FB0012E06C /* PlayListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF20C72A28CCD1FB0012E06C /* PlayListTableViewCell.swift */; };
+		FF20C72D28CCD1FB0012E06C /* PlayListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF20C72B28CCD1FB0012E06C /* PlayListTableViewCell.xib */; };
+		FF20C72F28CCD2550012E06C /* PlayItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF20C72E28CCD2550012E06C /* PlayItemViewModel.swift */; };
+		FF20C73228CCD6710012E06C /* PlaylistDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF20C73128CCD6710012E06C /* PlaylistDTO.swift */; };
+		FF20C73428CCD7860012E06C /* MovieDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF20C73328CCD7860012E06C /* MovieDTO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4D5F2671F52A4B3DB9DA69C2 /* Pods-PhonePe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhonePe.debug.xcconfig"; path = "Target Support Files/Pods-PhonePe/Pods-PhonePe.debug.xcconfig"; sourceTree = "<group>"; };
 		C7CADCB1EE0344253B159878 /* Pods-PhonePe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhonePe.release.xcconfig"; path = "Target Support Files/Pods-PhonePe/Pods-PhonePe.release.xcconfig"; sourceTree = "<group>"; };
 		DD822BCDBDAB48A6BABA7D18 /* Pods_PhonePe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhonePe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF02B2FC28CD058E00060188 /* APIPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIPath.swift; sourceTree = "<group>"; };
 		FF062C8528CCAFC600CCBBFC /* PhonePe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhonePe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF062C8828CCAFC600CCBBFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FF062C8A28CCAFC600CCBBFC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FF062C8F28CCAFC600CCBBFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FF062C9228CCAFC600CCBBFC /* PhonePe.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PhonePe.xcdatamodel; sourceTree = "<group>"; };
 		FF062C9428CCAFC800CCBBFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -47,9 +52,14 @@
 		FF062CAF28CCB22000CCBBFC /* MovieTableCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieTableCellViewModel.swift; sourceTree = "<group>"; };
 		FF062CB128CCB68100CCBBFC /* MovieResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieResponseDTO.swift; sourceTree = "<group>"; };
 		FF062CB328CCB90800CCBBFC /* MovieAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieAPIService.swift; sourceTree = "<group>"; };
-		FF062CB528CCBDAC00CCBBFC /* PlayListManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayListManager.swift; sourceTree = "<group>"; };
+		FF062CB528CCBDAC00CCBBFC /* PlayListDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayListDataService.swift; sourceTree = "<group>"; };
 		FF062CB828CCBE0400CCBBFC /* PlayListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayListViewController.swift; sourceTree = "<group>"; };
 		FF062CBA28CCBE8500CCBBFC /* PlayListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayListViewModel.swift; sourceTree = "<group>"; };
+		FF20C72A28CCD1FB0012E06C /* PlayListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayListTableViewCell.swift; sourceTree = "<group>"; };
+		FF20C72B28CCD1FB0012E06C /* PlayListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayListTableViewCell.xib; sourceTree = "<group>"; };
+		FF20C72E28CCD2550012E06C /* PlayItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayItemViewModel.swift; sourceTree = "<group>"; };
+		FF20C73128CCD6710012E06C /* PlaylistDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistDTO.swift; sourceTree = "<group>"; };
+		FF20C73328CCD7860012E06C /* MovieDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDTO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,11 +112,10 @@
 		FF062C8728CCAFC600CCBBFC /* PhonePe */ = {
 			isa = PBXGroup;
 			children = (
-				FF062CB728CCBDF300CCBBFC /* PlayList */,
+				FF062CB728CCBDF300CCBBFC /* Playlist */,
 				FF062CA228CCB0C600CCBBFC /* Movies */,
 				FF062C9F28CCB09C00CCBBFC /* Common */,
 				FF062C8828CCAFC600CCBBFC /* AppDelegate.swift */,
-				FF062C8A28CCAFC600CCBBFC /* SceneDelegate.swift */,
 				FF062C8E28CCAFC600CCBBFC /* Main.storyboard */,
 				FF062C9428CCAFC800CCBBFC /* Assets.xcassets */,
 				FF062C9628CCAFC800CCBBFC /* LaunchScreen.storyboard */,
@@ -120,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				FF062CA028CCB0AB00CCBBFC /* APIService.swift */,
+				FF02B2FC28CD058E00060188 /* APIPath.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -162,22 +172,43 @@
 			path = MovieTableViewCell;
 			sourceTree = "<group>";
 		};
-		FF062CB728CCBDF300CCBBFC /* PlayList */ = {
+		FF062CB728CCBDF300CCBBFC /* Playlist */ = {
 			isa = PBXGroup;
 			children = (
+				FF20C73028CCD6620012E06C /* DTOs */,
+				FF20C72928CCD1DC0012E06C /* Views */,
 				FF062CBC28CCBE9300CCBBFC /* DataService */,
 				FF062CB828CCBE0400CCBBFC /* PlayListViewController.swift */,
 				FF062CBA28CCBE8500CCBBFC /* PlayListViewModel.swift */,
 			);
-			path = PlayList;
+			path = Playlist;
 			sourceTree = "<group>";
 		};
 		FF062CBC28CCBE9300CCBBFC /* DataService */ = {
 			isa = PBXGroup;
 			children = (
-				FF062CB528CCBDAC00CCBBFC /* PlayListManager.swift */,
+				FF062CB528CCBDAC00CCBBFC /* PlayListDataService.swift */,
 			);
 			path = DataService;
+			sourceTree = "<group>";
+		};
+		FF20C72928CCD1DC0012E06C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FF20C72A28CCD1FB0012E06C /* PlayListTableViewCell.swift */,
+				FF20C72B28CCD1FB0012E06C /* PlayListTableViewCell.xib */,
+				FF20C72E28CCD2550012E06C /* PlayItemViewModel.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FF20C73028CCD6620012E06C /* DTOs */ = {
+			isa = PBXGroup;
+			children = (
+				FF20C73128CCD6710012E06C /* PlaylistDTO.swift */,
+				FF20C73328CCD7860012E06C /* MovieDTO.swift */,
+			);
+			path = DTOs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,6 +273,7 @@
 			files = (
 				FF062C9828CCAFC800CCBBFC /* LaunchScreen.storyboard in Resources */,
 				FF062C9528CCAFC800CCBBFC /* Assets.xcassets in Resources */,
+				FF20C72D28CCD1FB0012E06C /* PlayListTableViewCell.xib in Resources */,
 				FF062C9028CCAFC600CCBBFC /* Main.storyboard in Resources */,
 				FF062CAE28CCB21C00CCBBFC /* MovieTableViewCell.xib in Resources */,
 			);
@@ -299,13 +331,17 @@
 				FF062CA128CCB0AB00CCBBFC /* APIService.swift in Sources */,
 				FF062CB428CCB90800CCBBFC /* MovieAPIService.swift in Sources */,
 				FF062C8928CCAFC600CCBBFC /* AppDelegate.swift in Sources */,
-				FF062CB628CCBDAC00CCBBFC /* PlayListManager.swift in Sources */,
-				FF062C8B28CCAFC600CCBBFC /* SceneDelegate.swift in Sources */,
+				FF062CB628CCBDAC00CCBBFC /* PlayListDataService.swift in Sources */,
+				FF20C73228CCD6710012E06C /* PlaylistDTO.swift in Sources */,
+				FF20C72C28CCD1FB0012E06C /* PlayListTableViewCell.swift in Sources */,
 				FF062CBB28CCBE8500CCBBFC /* PlayListViewModel.swift in Sources */,
 				FF062C9328CCAFC600CCBBFC /* PhonePe.xcdatamodeld in Sources */,
 				FF062CB028CCB22000CCBBFC /* MovieTableCellViewModel.swift in Sources */,
 				FF062CAC28CCB21800CCBBFC /* MovieTableViewCell.swift in Sources */,
+				FF20C73428CCD7860012E06C /* MovieDTO.swift in Sources */,
 				FF062CB928CCBE0400CCBBFC /* PlayListViewController.swift in Sources */,
+				FF02B2FD28CD058E00060188 /* APIPath.swift in Sources */,
+				FF20C72F28CCD2550012E06C /* PlayItemViewModel.swift in Sources */,
 				FF062CA728CCB10A00CCBBFC /* MoviesListViewController.swift in Sources */,
 				FF062CB228CCB68100CCBBFC /* MovieResponseDTO.swift in Sources */,
 				FF062CA928CCB1C600CCBBFC /* MovieListViewModel.swift in Sources */,

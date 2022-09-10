@@ -9,7 +9,6 @@ import Foundation
 
 class MovieListViewModel {
     
-    
     private var cellViewModels = [MovieTableCellViewModel]()
     
     func getMovies(_ completion: @escaping (String?) -> ()) {
@@ -24,6 +23,7 @@ class MovieListViewModel {
             }
             
             self.cellViewModels = dtos.map{ MovieTableCellViewModel(dto: $0) }
+            PlayListDataService().mapPlayList(viewModels: self.cellViewModels)
             completion(nil)
         }
     }

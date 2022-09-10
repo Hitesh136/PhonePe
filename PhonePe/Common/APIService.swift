@@ -6,11 +6,14 @@
 //
 
 import Foundation
-
-import Foundation
  
 class APIService {
         
+    /*
+     We should use ResultType instead of data in completion hander
+     This network layer is not fully implemented. It should add more cases like checking for status code and error coming from json or error coming from server like internal server error.
+     This function should be generic and return the response dto in result type.
+     */
     func getAPIRequest(_ url: String, _ completion: @escaping ((Data?) -> ()) ) {
         
         guard let url = URL(string: url) else {

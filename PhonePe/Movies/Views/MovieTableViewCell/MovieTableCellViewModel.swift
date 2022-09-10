@@ -9,12 +9,18 @@ import Foundation
 
 class MovieTableCellViewModel {
     
-    var dto: MovieDTO
+    private var dto: MovieDTO
     
     var movieName: String
     var rating: String
-    var playList: String
+    var playListArray = [String]()
+    var playList: String {
+        return playListArray.joined(separator: ", ")
+    }
     var movieImageURLInString: String
+    var movieId: Int {
+        return dto.id
+    }
     var movieImageURL: URL? {
         URL(string: movieImageURLInString)
     }
@@ -23,10 +29,8 @@ class MovieTableCellViewModel {
         
         self.movieName = dto.originalTitle
         self.rating = "Rating - \(dto.voteAverage)"
-        self.playList = ""
         
-        // need to find what url need to add before the posterpath to create the final url .
-        self.movieImageURLInString = "https://i.picsum.photos/id/1041/200/300.jpg?hmac=l4FIMky2hFQgqx0kNCHmVhtfQJz_CUcyK_0Q-UiQwAI"
+        self.movieImageURLInString = APIPath().getImagePath(imageName: dto.posterPath, width: "500")
     }
     
 }
