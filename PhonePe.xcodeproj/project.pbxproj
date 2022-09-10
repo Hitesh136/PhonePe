@@ -1,0 +1,548 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		27AB9E96D77F350E9968C59A /* Pods_PhonePe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD822BCDBDAB48A6BABA7D18 /* Pods_PhonePe.framework */; };
+		FF062C8928CCAFC600CCBBFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF062C8828CCAFC600CCBBFC /* AppDelegate.swift */; };
+		FF062C8B28CCAFC600CCBBFC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF062C8A28CCAFC600CCBBFC /* SceneDelegate.swift */; };
+		FF062C9028CCAFC600CCBBFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF062C8E28CCAFC600CCBBFC /* Main.storyboard */; };
+		FF062C9328CCAFC600CCBBFC /* PhonePe.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FF062C9128CCAFC600CCBBFC /* PhonePe.xcdatamodeld */; };
+		FF062C9528CCAFC800CCBBFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF062C9428CCAFC800CCBBFC /* Assets.xcassets */; };
+		FF062C9828CCAFC800CCBBFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF062C9628CCAFC800CCBBFC /* LaunchScreen.storyboard */; };
+		FF062CA128CCB0AB00CCBBFC /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF062CA028CCB0AB00CCBBFC /* APIService.swift */; };
+		FF062CA728CCB10A00CCBBFC /* MoviesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF062CA628CCB10A00CCBBFC /* MoviesListViewController.swift */; };
+		FF062CA928CCB1C600CCBBFC /* MovieListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF062CA828CCB1C600CCBBFC /* MovieListViewModel.swift */; };
+		FF062CAC28CCB21800CCBBFC /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF062CAB28CCB21800CCBBFC /* MovieTableViewCell.swift */; };
+		FF062CAE28CCB21C00CCBBFC /* MovieTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF062CAD28CCB21C00CCBBFC /* MovieTableViewCell.xib */; };
+		FF062CB028CCB22000CCBBFC /* MovieTableCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF062CAF28CCB22000CCBBFC /* MovieTableCellViewModel.swift */; };
+		FF062CB228CCB68100CCBBFC /* MovieResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF062CB128CCB68100CCBBFC /* MovieResponseDTO.swift */; };
+		FF062CB428CCB90800CCBBFC /* MovieAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF062CB328CCB90800CCBBFC /* MovieAPIService.swift */; };
+		FF062CB628CCBDAC00CCBBFC /* PlayListManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF062CB528CCBDAC00CCBBFC /* PlayListManager.swift */; };
+		FF062CB928CCBE0400CCBBFC /* PlayListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF062CB828CCBE0400CCBBFC /* PlayListViewController.swift */; };
+		FF062CBB28CCBE8500CCBBFC /* PlayListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF062CBA28CCBE8500CCBBFC /* PlayListViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4D5F2671F52A4B3DB9DA69C2 /* Pods-PhonePe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhonePe.debug.xcconfig"; path = "Target Support Files/Pods-PhonePe/Pods-PhonePe.debug.xcconfig"; sourceTree = "<group>"; };
+		C7CADCB1EE0344253B159878 /* Pods-PhonePe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhonePe.release.xcconfig"; path = "Target Support Files/Pods-PhonePe/Pods-PhonePe.release.xcconfig"; sourceTree = "<group>"; };
+		DD822BCDBDAB48A6BABA7D18 /* Pods_PhonePe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhonePe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF062C8528CCAFC600CCBBFC /* PhonePe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhonePe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF062C8828CCAFC600CCBBFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FF062C8A28CCAFC600CCBBFC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FF062C8F28CCAFC600CCBBFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FF062C9228CCAFC600CCBBFC /* PhonePe.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PhonePe.xcdatamodel; sourceTree = "<group>"; };
+		FF062C9428CCAFC800CCBBFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF062C9728CCAFC800CCBBFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FF062C9928CCAFC800CCBBFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF062CA028CCB0AB00CCBBFC /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		FF062CA628CCB10A00CCBBFC /* MoviesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesListViewController.swift; sourceTree = "<group>"; };
+		FF062CA828CCB1C600CCBBFC /* MovieListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewModel.swift; sourceTree = "<group>"; };
+		FF062CAB28CCB21800CCBBFC /* MovieTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
+		FF062CAD28CCB21C00CCBBFC /* MovieTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MovieTableViewCell.xib; sourceTree = "<group>"; };
+		FF062CAF28CCB22000CCBBFC /* MovieTableCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieTableCellViewModel.swift; sourceTree = "<group>"; };
+		FF062CB128CCB68100CCBBFC /* MovieResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieResponseDTO.swift; sourceTree = "<group>"; };
+		FF062CB328CCB90800CCBBFC /* MovieAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieAPIService.swift; sourceTree = "<group>"; };
+		FF062CB528CCBDAC00CCBBFC /* PlayListManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayListManager.swift; sourceTree = "<group>"; };
+		FF062CB828CCBE0400CCBBFC /* PlayListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayListViewController.swift; sourceTree = "<group>"; };
+		FF062CBA28CCBE8500CCBBFC /* PlayListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayListViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF062C8228CCAFC600CCBBFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27AB9E96D77F350E9968C59A /* Pods_PhonePe.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7CC0C554E77B096E359D5529 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD822BCDBDAB48A6BABA7D18 /* Pods_PhonePe.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B0045E739A64E6CB6372E6D9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4D5F2671F52A4B3DB9DA69C2 /* Pods-PhonePe.debug.xcconfig */,
+				C7CADCB1EE0344253B159878 /* Pods-PhonePe.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FF062C7C28CCAFC600CCBBFC = {
+			isa = PBXGroup;
+			children = (
+				FF062C8728CCAFC600CCBBFC /* PhonePe */,
+				FF062C8628CCAFC600CCBBFC /* Products */,
+				B0045E739A64E6CB6372E6D9 /* Pods */,
+				7CC0C554E77B096E359D5529 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FF062C8628CCAFC600CCBBFC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF062C8528CCAFC600CCBBFC /* PhonePe.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF062C8728CCAFC600CCBBFC /* PhonePe */ = {
+			isa = PBXGroup;
+			children = (
+				FF062CB728CCBDF300CCBBFC /* PlayList */,
+				FF062CA228CCB0C600CCBBFC /* Movies */,
+				FF062C9F28CCB09C00CCBBFC /* Common */,
+				FF062C8828CCAFC600CCBBFC /* AppDelegate.swift */,
+				FF062C8A28CCAFC600CCBBFC /* SceneDelegate.swift */,
+				FF062C8E28CCAFC600CCBBFC /* Main.storyboard */,
+				FF062C9428CCAFC800CCBBFC /* Assets.xcassets */,
+				FF062C9628CCAFC800CCBBFC /* LaunchScreen.storyboard */,
+				FF062C9928CCAFC800CCBBFC /* Info.plist */,
+				FF062C9128CCAFC600CCBBFC /* PhonePe.xcdatamodeld */,
+			);
+			path = PhonePe;
+			sourceTree = "<group>";
+		};
+		FF062C9F28CCB09C00CCBBFC /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				FF062CA028CCB0AB00CCBBFC /* APIService.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		FF062CA228CCB0C600CCBBFC /* Movies */ = {
+			isa = PBXGroup;
+			children = (
+				FF062CA528CCB0F500CCBBFC /* API */,
+				FF062CA328CCB0D700CCBBFC /* Views */,
+				FF062CA628CCB10A00CCBBFC /* MoviesListViewController.swift */,
+				FF062CA828CCB1C600CCBBFC /* MovieListViewModel.swift */,
+			);
+			path = Movies;
+			sourceTree = "<group>";
+		};
+		FF062CA328CCB0D700CCBBFC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FF062CAA28CCB20800CCBBFC /* MovieTableViewCell */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FF062CA528CCB0F500CCBBFC /* API */ = {
+			isa = PBXGroup;
+			children = (
+				FF062CB128CCB68100CCBBFC /* MovieResponseDTO.swift */,
+				FF062CB328CCB90800CCBBFC /* MovieAPIService.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		FF062CAA28CCB20800CCBBFC /* MovieTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				FF062CAB28CCB21800CCBBFC /* MovieTableViewCell.swift */,
+				FF062CAD28CCB21C00CCBBFC /* MovieTableViewCell.xib */,
+				FF062CAF28CCB22000CCBBFC /* MovieTableCellViewModel.swift */,
+			);
+			path = MovieTableViewCell;
+			sourceTree = "<group>";
+		};
+		FF062CB728CCBDF300CCBBFC /* PlayList */ = {
+			isa = PBXGroup;
+			children = (
+				FF062CBC28CCBE9300CCBBFC /* DataService */,
+				FF062CB828CCBE0400CCBBFC /* PlayListViewController.swift */,
+				FF062CBA28CCBE8500CCBBFC /* PlayListViewModel.swift */,
+			);
+			path = PlayList;
+			sourceTree = "<group>";
+		};
+		FF062CBC28CCBE9300CCBBFC /* DataService */ = {
+			isa = PBXGroup;
+			children = (
+				FF062CB528CCBDAC00CCBBFC /* PlayListManager.swift */,
+			);
+			path = DataService;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF062C8428CCAFC600CCBBFC /* PhonePe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF062C9C28CCAFC800CCBBFC /* Build configuration list for PBXNativeTarget "PhonePe" */;
+			buildPhases = (
+				7CA688A3B6DDB755A3EAA6EA /* [CP] Check Pods Manifest.lock */,
+				FF062C8128CCAFC600CCBBFC /* Sources */,
+				FF062C8228CCAFC600CCBBFC /* Frameworks */,
+				FF062C8328CCAFC600CCBBFC /* Resources */,
+				E1C31A3A94AF77C97A5931E5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhonePe;
+			productName = PhonePe;
+			productReference = FF062C8528CCAFC600CCBBFC /* PhonePe.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF062C7D28CCAFC600CCBBFC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					FF062C8428CCAFC600CCBBFC = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = FF062C8028CCAFC600CCBBFC /* Build configuration list for PBXProject "PhonePe" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF062C7C28CCAFC600CCBBFC;
+			productRefGroup = FF062C8628CCAFC600CCBBFC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF062C8428CCAFC600CCBBFC /* PhonePe */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF062C8328CCAFC600CCBBFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF062C9828CCAFC800CCBBFC /* LaunchScreen.storyboard in Resources */,
+				FF062C9528CCAFC800CCBBFC /* Assets.xcassets in Resources */,
+				FF062C9028CCAFC600CCBBFC /* Main.storyboard in Resources */,
+				FF062CAE28CCB21C00CCBBFC /* MovieTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7CA688A3B6DDB755A3EAA6EA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PhonePe-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1C31A3A94AF77C97A5931E5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PhonePe/Pods-PhonePe-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PhonePe/Pods-PhonePe-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PhonePe/Pods-PhonePe-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF062C8128CCAFC600CCBBFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF062CA128CCB0AB00CCBBFC /* APIService.swift in Sources */,
+				FF062CB428CCB90800CCBBFC /* MovieAPIService.swift in Sources */,
+				FF062C8928CCAFC600CCBBFC /* AppDelegate.swift in Sources */,
+				FF062CB628CCBDAC00CCBBFC /* PlayListManager.swift in Sources */,
+				FF062C8B28CCAFC600CCBBFC /* SceneDelegate.swift in Sources */,
+				FF062CBB28CCBE8500CCBBFC /* PlayListViewModel.swift in Sources */,
+				FF062C9328CCAFC600CCBBFC /* PhonePe.xcdatamodeld in Sources */,
+				FF062CB028CCB22000CCBBFC /* MovieTableCellViewModel.swift in Sources */,
+				FF062CAC28CCB21800CCBBFC /* MovieTableViewCell.swift in Sources */,
+				FF062CB928CCBE0400CCBBFC /* PlayListViewController.swift in Sources */,
+				FF062CA728CCB10A00CCBBFC /* MoviesListViewController.swift in Sources */,
+				FF062CB228CCB68100CCBBFC /* MovieResponseDTO.swift in Sources */,
+				FF062CA928CCB1C600CCBBFC /* MovieListViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FF062C8E28CCAFC600CCBBFC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF062C8F28CCAFC600CCBBFC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FF062C9628CCAFC800CCBBFC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF062C9728CCAFC800CCBBFC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FF062C9A28CCAFC800CCBBFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FF062C9B28CCAFC800CCBBFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF062C9D28CCAFC800CCBBFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D5F2671F52A4B3DB9DA69C2 /* Pods-PhonePe.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W7Q5L6M8BH;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PhonePe/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hitesh.PhonePe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FF062C9E28CCAFC800CCBBFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7CADCB1EE0344253B159878 /* Pods-PhonePe.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W7Q5L6M8BH;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PhonePe/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hitesh.PhonePe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF062C8028CCAFC600CCBBFC /* Build configuration list for PBXProject "PhonePe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF062C9A28CCAFC800CCBBFC /* Debug */,
+				FF062C9B28CCAFC800CCBBFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF062C9C28CCAFC800CCBBFC /* Build configuration list for PBXNativeTarget "PhonePe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF062C9D28CCAFC800CCBBFC /* Debug */,
+				FF062C9E28CCAFC800CCBBFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FF062C9128CCAFC600CCBBFC /* PhonePe.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FF062C9228CCAFC600CCBBFC /* PhonePe.xcdatamodel */,
+			);
+			currentVersion = FF062C9228CCAFC600CCBBFC /* PhonePe.xcdatamodel */;
+			path = PhonePe.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FF062C7D28CCAFC600CCBBFC /* Project object */;
+}

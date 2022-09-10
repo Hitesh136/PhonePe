@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Movies List View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="MoviesListViewController" id="BYZ-38-t0r" customClass="MoviesListViewController" customModule="PhonePe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="kCc-IK-iFV">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GSa-ie-rdu">
+                                <rect key="frame" x="294" y="792" width="100" height="50"/>
+                                <color key="backgroundColor" red="0.60392156860000001" green="0.60392156860000001" blue="0.60392156860000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="h9h-2z-vSL"/>
+                                    <constraint firstAttribute="height" constant="50" id="rZz-2Q-5gY"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Filter"/>
+                                <connections>
+                                    <action selector="actionFilter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0il-93-PZs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="GSa-ie-rdu" secondAttribute="bottom" constant="20" id="FuZ-eh-8Ht"/>
+                            <constraint firstItem="kCc-IK-iFV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="LKa-lA-WNy"/>
+                            <constraint firstItem="kCc-IK-iFV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Ldn-WS-SjN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kCc-IK-iFV" secondAttribute="bottom" id="Npc-HB-ulL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kCc-IK-iFV" secondAttribute="trailing" id="qjI-Ua-hfi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GSa-ie-rdu" secondAttribute="trailing" constant="20" id="r6h-Xh-X9p"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="kCc-IK-iFV" id="Qpa-GN-aA4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="112.5"/>
+        </scene>
+        <!--Play List View Controller-->
+        <scene sceneID="QNJ-1M-3mm">
+            <objects>
+                <viewController storyboardIdentifier="PlayListViewController" id="3Qf-7Y-VBt" customClass="PlayListViewController" customModule="PhonePe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dkw-Bq-bBH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Iu1-C4-QIG">
+                                <rect key="frame" x="0.0" y="462" width="414" height="400"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="hG6-wb-ya3"/>
+                                </constraints>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5z7-Xf-Zfq">
+                                <rect key="frame" x="10" y="402" width="394" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="t90-ap-pUj"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="+ Create PlayList"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vSm-Tz-JV4"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5z7-Xf-Zfq" firstAttribute="leading" secondItem="vSm-Tz-JV4" secondAttribute="leading" constant="10" id="EPZ-tV-YFH"/>
+                            <constraint firstItem="vSm-Tz-JV4" firstAttribute="trailing" secondItem="5z7-Xf-Zfq" secondAttribute="trailing" constant="10" id="Ldh-qm-DwH"/>
+                            <constraint firstItem="Iu1-C4-QIG" firstAttribute="top" secondItem="5z7-Xf-Zfq" secondAttribute="bottom" constant="10" id="Qjl-MN-Lge"/>
+                            <constraint firstItem="vSm-Tz-JV4" firstAttribute="trailing" secondItem="Iu1-C4-QIG" secondAttribute="trailing" id="iKf-b0-N2d"/>
+                            <constraint firstItem="Iu1-C4-QIG" firstAttribute="leading" secondItem="vSm-Tz-JV4" secondAttribute="leading" id="p91-Se-QeB"/>
+                            <constraint firstItem="vSm-Tz-JV4" firstAttribute="bottom" secondItem="Iu1-C4-QIG" secondAttribute="bottom" id="xu4-1n-brc"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HIP-u2-crL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="729" y="111"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

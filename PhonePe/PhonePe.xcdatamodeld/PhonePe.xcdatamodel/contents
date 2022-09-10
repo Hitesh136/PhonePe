@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19574" systemVersion="21C52" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="MovieEntity" representedClassName="MovieEntity" syncable="YES" codeGenerationType="class"/>
+    <entity name="PlaylistEntity" representedClassName="PlaylistEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="movie" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="MovieEntity"/>
+    </entity>
+    <elements>
+        <element name="PlaylistEntity" positionX="-63" positionY="-18" width="128" height="14"/>
+        <element name="MovieEntity" positionX="-45" positionY="18" width="128" height="29"/>
+    </elements>
+</model>
