@@ -33,4 +33,7 @@ class MovieTableCellViewModel {
         self.movieImageURLInString = APIPath().getImagePath(imageName: dto.posterPath, width: "500")
     }
     
+    func containsPlayList(_ name: String) -> Bool {
+        return playListArray.contains(name)
+    }
 }

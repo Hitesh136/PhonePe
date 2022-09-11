@@ -47,6 +47,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="DHt-yr-uMg"/>
                     <connections>
+                        <outlet property="filterButton" destination="GSa-ie-rdu" id="Age-LX-spn"/>
                         <outlet property="tableView" destination="kCc-IK-iFV" id="Qpa-GN-aA4"/>
                     </connections>
                 </viewController>

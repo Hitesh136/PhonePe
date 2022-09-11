@@ -36,7 +36,7 @@ class PlayListDataService {
     func getPlayList(withName name: String) -> PlaylistEntity? {
         
         let fetchRequest: NSFetchRequest<PlaylistEntity> = PlaylistEntity.fetchRequest()
-        fetchRequest.predicate = NSPredicate(format: "name == %@", name.lowercased())
+        fetchRequest.predicate = NSPredicate(format: "name == %@", name)
         do {
             let results = try managedObjectContext.fetch(fetchRequest)
             return results.first
@@ -76,7 +76,7 @@ class PlayListDataService {
         guard getPlayList(withName: name) == nil else { return }
         let playListEntity = PlaylistEntity(context: managedObjectContext)
         
-        playListEntity.name = name.lowercased()
+        playListEntity.name = name
         playListEntity.movie = NSSet(array: [])
         do {
             try managedObjectContext.save()
@@ -99,6 +99,7 @@ class PlayListDataService {
         for movie in moviesSet {
             if movie.id == Int32(movieId) {
                 found = true
+                break
             }
         }
         if !found {

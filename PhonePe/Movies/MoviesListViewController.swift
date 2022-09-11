@@ -10,6 +10,7 @@ import UIKit
 class MoviesListViewController: UIViewController {
 
     // MARK: - IBOutlets
+    @IBOutlet weak var filterButton: UIButton!
     @IBOutlet weak var tableView: UITableView!{
         didSet {
             tableView.dataSource = self
@@ -43,8 +44,14 @@ class MoviesListViewController: UIViewController {
                 return
             }
             
-            self.tableView.reloadData()
+            self.configureView()
         }
+    }
+    
+    func configureView() {
+        let filterButtonText = viewModel.getFilterButtonText()
+        filterButton.setTitle(filterButtonText, for: .normal)
+        self.tableView.reloadData()
     }
     
     func showPlayListViewController(movieId: Int?) {
@@ -56,7 +63,12 @@ class MoviesListViewController: UIViewController {
     
     // MARK: - IBAction
     @IBAction func actionFilter(_ sender: Any) {
-        showPlayListViewController(movieId: nil)
+        if viewModel.filterState == .clear {
+            viewModel.removeFilter()
+            configureView()
+        } else {
+            showPlayListViewController(movieId: nil)
+        }
     }
 }
 
@@ -85,5 +97,10 @@ extension MoviesListViewController: MovieTableViewCellDelegate {
 extension MoviesListViewController: PlayListViewControllerDelegate {
     func reloadView() {
         getMovieData()
+    }
+    
+    func actionFilter(playListName: String) {
+        viewModel.filterData(currentFilteredPlaylist: playListName)
+        configureView()
     }
 }

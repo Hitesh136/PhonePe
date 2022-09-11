@@ -9,6 +9,7 @@ import UIKit
 
 protocol PlayListViewControllerDelegate: AnyObject {
     func reloadView()
+    func actionFilter(playListName: String)
 }
 
 class PlayListViewController: UIViewController {
@@ -115,8 +116,14 @@ extension PlayListViewController: UITableViewDataSource {
 // MARK: - UITableViewDelegate
 extension PlayListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        viewModel.addMovie(atIndexPath: indexPath)
-        self.delegate?.reloadView()
+        
+        if viewModel.movieId == nil {
+            let cellViewModel = viewModel.cellViewModel(atIndexPath: indexPath)
+            delegate?.actionFilter(playListName: cellViewModel.name)
+        } else {
+            viewModel.addMovie(atIndexPath: indexPath)
+            self.delegate?.reloadView()
+        }
         dismiss(animated: true, completion: nil)
     }
 }
