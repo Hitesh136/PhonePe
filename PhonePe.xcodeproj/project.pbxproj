@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		27AB9E96D77F350E9968C59A /* Pods_PhonePe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD822BCDBDAB48A6BABA7D18 /* Pods_PhonePe.framework */; };
 		FF02B2FD28CD058E00060188 /* APIPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF02B2FC28CD058E00060188 /* APIPath.swift */; };
+		FF02B2FF28CDE93C00060188 /* Screen Recording 2022-09-11 at 3.22.33 PM.mov in Resources */ = {isa = PBXBuildFile; fileRef = FF02B2FE28CDE93C00060188 /* Screen Recording 2022-09-11 at 3.22.33 PM.mov */; };
 		FF062C8928CCAFC600CCBBFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF062C8828CCAFC600CCBBFC /* AppDelegate.swift */; };
 		FF062C9028CCAFC600CCBBFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF062C8E28CCAFC600CCBBFC /* Main.storyboard */; };
 		FF062C9328CCAFC600CCBBFC /* PhonePe.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FF062C9128CCAFC600CCBBFC /* PhonePe.xcdatamodeld */; };
@@ -37,6 +38,7 @@
 		C7CADCB1EE0344253B159878 /* Pods-PhonePe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhonePe.release.xcconfig"; path = "Target Support Files/Pods-PhonePe/Pods-PhonePe.release.xcconfig"; sourceTree = "<group>"; };
 		DD822BCDBDAB48A6BABA7D18 /* Pods_PhonePe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhonePe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF02B2FC28CD058E00060188 /* APIPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIPath.swift; sourceTree = "<group>"; };
+		FF02B2FE28CDE93C00060188 /* Screen Recording 2022-09-11 at 3.22.33 PM.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "Screen Recording 2022-09-11 at 3.22.33 PM.mov"; sourceTree = "<group>"; };
 		FF062C8528CCAFC600CCBBFC /* PhonePe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhonePe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF062C8828CCAFC600CCBBFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF062C8F28CCAFC600CCBBFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				FF062C9F28CCB09C00CCBBFC /* Common */,
 				FF062C8828CCAFC600CCBBFC /* AppDelegate.swift */,
 				FF062C8E28CCAFC600CCBBFC /* Main.storyboard */,
+				FF02B2FE28CDE93C00060188 /* Screen Recording 2022-09-11 at 3.22.33 PM.mov */,
 				FF062C9428CCAFC800CCBBFC /* Assets.xcassets */,
 				FF062C9628CCAFC800CCBBFC /* LaunchScreen.storyboard */,
 				FF062C9928CCAFC800CCBBFC /* Info.plist */,
@@ -271,6 +274,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF02B2FF28CDE93C00060188 /* Screen Recording 2022-09-11 at 3.22.33 PM.mov in Resources */,
 				FF062C9828CCAFC800CCBBFC /* LaunchScreen.storyboard in Resources */,
 				FF062C9528CCAFC800CCBBFC /* Assets.xcassets in Resources */,
 				FF20C72D28CCD1FB0012E06C /* PlayListTableViewCell.xib in Resources */,
